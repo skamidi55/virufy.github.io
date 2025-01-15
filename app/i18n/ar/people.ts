@@ -11,6 +11,8 @@ import {
   MadhavDatt,
   MansoorAhmed,
   ManujAggarwal,
+  AdamLeipzig,
+  KoheiWakamiya,
   MarkHaseltine,
   MayXu,
   MelissaDyrdahl,
@@ -180,6 +182,17 @@ const people: People = {
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       {
+        img: AdamLeipzig,
+        name: "آدم لايبزيغ",
+        role: "المستشار التنفيذي",
+        texts: [
+          "الرئيس التنفيذي لشركة Entertainment Media Partners",
+          "الرئيس السابق لشركة National Geographic Films",
+          "عضو هيئة التدريس المحترف بمدرسة الأعمال بجامعة بيركلي هاس"
+        ],
+        "link": "https://www.linkedin.com/in/adamleipzig/"
+      },
+      {
         img: RokSosic,
         name: 'روك سوسي',
         role: 'مستشار في الذكاء الاصطناعي',
@@ -260,6 +273,16 @@ const people: People = {
         role: 'مستشار الصحة العامة',
         texts: ['أستاذ مساعد في الوبائيات، جامعة كيوشو'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/members/yokota-fumihiko',
+      },
+      {
+        img: KoheiWakamiya,
+        name: "كوهي واكاميا",
+        role: "مستشار الذكاء الاصطناعي الصوتي",
+        texts: [
+          "أستاذ مساعد تصميم الصوتيات",
+          "جامعة كيوشو"
+        ],
+        link: "https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html"
       },
       {
         img: TamerFahmy,

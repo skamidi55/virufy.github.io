@@ -1,4 +1,5 @@
 import {
+  AdamLeipzig,
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
@@ -6,6 +7,7 @@ import {
   JureLeskovec,
   KaraMeister,
   KhwajaShaik,
+  KoheiWakamiya,
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
@@ -176,6 +178,17 @@ const people: People = {
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       {
+        img: AdamLeipzig,
+        name: "Adam Leipzig",
+        role: "Asesor Ejecutivo",
+        texts: [
+          "CEO de Entertainment Media Partners",
+          "Ex Presidente de National Geographic Films",
+          "Profesor Profesional en la Escuela de Negocios Haas de Berkeley"
+        ],
+        link: "https://www.linkedin.com/in/adamleipzig/"
+      },
+      {
         img: RokSosic,
         name: 'Rok Sosic',
         role: 'Artificial Intelligence Advisor',
@@ -258,6 +271,16 @@ const people: People = {
         role: 'Public Health Advisor',
         texts: ['Associate Professor of Epidemiology, Kyushu University'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
+      },
+      {
+        img: KoheiWakamiya,
+        name: "Kohei Wakamiya",
+        role: "Asesor de IA de Audio",
+        texts: [
+          "Profesor Asistente de Diseño Acústico",
+          "Universidad de Kyushu"
+        ],
+        link: "https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html"
       },
       {
         img: TamerFahmy,

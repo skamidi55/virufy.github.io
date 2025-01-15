@@ -1,4 +1,5 @@
 import {
+  AdamLeipzig,
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
@@ -6,6 +7,7 @@ import {
   JureLeskovec,
   KaraMeister,
   KhwajaShaik,
+  KoheiWakamiya,
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
@@ -172,6 +174,17 @@ const people: People = {
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       {
+        img: AdamLeipzig,
+        name: "アダム・ライプツィッヒ",
+        role: "エグゼクティブアドバイザー",
+        texts: [
+          "Entertainment Media PartnersのCEO",
+          "元National Geographic Filmsの社長",
+          "バークレーのハースビジネススクールの専門教授"
+        ],
+        link: "https://www.linkedin.com/in/adamleipzig/"
+      },      
+      {
         img: RokSosic,
         name: 'ロック・ソシック',
         role: '人工知能アドバイザー',
@@ -252,6 +265,16 @@ const people: People = {
         role: '公衆衛生アドバイザー',
         texts: ['疫学准教授　九州大学'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
+      },
+      {
+        img: KoheiWakamiya,
+        name: '若宮 耕平',
+        role: '音声AI顧問',
+        texts: [
+          '音声AIアドバイザー',
+          '九州大学'
+        ],
+        link: 'https://www.linkedin.com/in/adamleipzig/',
       },
       {
         img: TamerFahmy,
