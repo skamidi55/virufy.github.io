@@ -11,7 +11,6 @@ import {
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
-  MansoorAhmed,
   ManujAggarwal,
   MarkHaseltine,
   MayXu,
@@ -121,16 +120,6 @@ const people: People = {
         role: 'Executive Advisor',
         texts: ['Former CTO/CPO - edX', 'Computer Science alumnus - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
-      },
-      {
-        img: MansoorAhmed,
-        name: 'Mansoor Ahmed',
-        role: 'Clinical Research Advisor',
-        texts: [
-          'Founder & CEO - Cleveland Sleep Research Center',
-          'MBBS - King Edward Medical University',
-        ],
-        link: 'https://www.linkedin.com/in/mansoor-ahmed-31a86452/',
       },
       {
         img: FaisalCheema,

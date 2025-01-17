@@ -9,7 +9,6 @@ import {
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
-  MansoorAhmed,
   ManujAggarwal,
   AdamLeipzig,
   KoheiWakamiya,
@@ -122,16 +121,6 @@ const people: People = {
         role: 'مستشار تنفيذي',
         texts: ['CTO / CPO السابق - edX', 'خريج علوم الكمبيوتر - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
-      },
-      {
-        img: MansoorAhmed,
-        name: 'منصور أحمد',
-        role: 'مستشار بحث طبي',
-        texts: [
-          'مؤسس ومدير تنفيذي - Cleveland Sleep Research Center',
-          'MBBS - جامعة الملك إدوارد الطبية',
-        ],
-        link: 'https://www.linkedin.com/in/mansoor-ahmed-31a86452/',
       },
       {
         img: FaisalCheema,
