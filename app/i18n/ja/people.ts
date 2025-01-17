@@ -11,7 +11,6 @@ import {
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
-  MansoorAhmed,
   ManujAggarwal,
   MarkHaseltine,
   MayXu,
@@ -116,16 +115,6 @@ const people: People = {
         role: 'エグゼクティブアドバイザー',
         texts: ['元edX CTO/CPO', 'MITコンピュータサイエンス卒業生'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
-      },
-      {
-        img: MansoorAhmed,
-        name: 'マンスール・アーメッド',
-        role: '臨床研究アドバイザー',
-        texts: [
-          'Cleveland Sleep Research Center創設者兼CEO',
-          'キングエドワード医科大学MBBS',
-        ],
-        link: 'https://www.linkedin.com/in/mansoor-ahmed-31a86452/',
       },
       {
         img: FaisalCheema,

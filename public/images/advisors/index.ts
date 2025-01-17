@@ -13,7 +13,6 @@ export { default as KutsunaSatoshi } from './kutsuna-satoshi.webp';
 export { default as LesAtlas } from './les-atlas.webp';
 export { default as MadhavDatt } from './madhav-datt.webp';
 export {default as AdamLeipzig } from './adam-leipzig.webp';
-export { default as MansoorAhmed } from './mansoor-ahmed.webp';
 export { default as ManujAggarwal } from './manuj-aggarwal.webp';
 export { default as KoheiWakamiya } from './kohei-wakamiya.webp';
 export { default as MarkHaseltine } from './mark-haseltine.webp';
