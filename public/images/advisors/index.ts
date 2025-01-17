@@ -15,7 +15,7 @@ export { default as MadhavDatt } from './madhav-datt.webp';
 export {default as AdamLeipzig } from './adam-leipzig.webp';
 export { default as MansoorAhmed } from './mansoor-ahmed.webp';
 export { default as ManujAggarwal } from './manuj-aggarwal.webp';
-export { default as KoheiWakamiya } from './kohei-wakamiya.webp';
+export { default as KoheiWakamiya } from './koheiWakamiya.webp';
 export { default as MarkHaseltine } from './mark-haseltine.webp';
 export { default as MayXu } from './may-xu.webp';
 export { default as MelissaDyrdahl } from './melissa-dyrdahl.webp';
