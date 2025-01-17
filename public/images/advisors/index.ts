@@ -1,6 +1,7 @@
 export { default as BgHeader } from './bg-header.webp';
 
 // Cards
+export { default as AdamLeipzig } from './adam-leipzig.webp';
 export { default as AmilKhanzada } from './amil-khanzada.webp';
 export { default as AyomideOwoyemi } from './ayomide-owoyemi.webp';
 export { default as FaisalCheema } from './faisal-cheema.webp';
@@ -9,12 +10,11 @@ export { default as HiroyukiKunishima } from './hiroyuki-kunishima.webp';
 export { default as JureLeskovec } from './jure-leskovec.webp';
 export { default as KaraMeister } from './kara-meister.webp';
 export { default as KhwajaShaik } from './khwaja-shaik.webp';
+export { default as KoheiWakamiya } from './kohei-wakamiya.webp';
 export { default as KutsunaSatoshi } from './kutsuna-satoshi.webp';
 export { default as LesAtlas } from './les-atlas.webp';
 export { default as MadhavDatt } from './madhav-datt.webp';
-export {default as AdamLeipzig } from './adam-leipzig.webp';
 export { default as ManujAggarwal } from './manuj-aggarwal.webp';
-export { default as KoheiWakamiya } from './koheiWakamiya.webp';
 export { default as MarkHaseltine } from './mark-haseltine.webp';
 export { default as MayXu } from './may-xu.webp';
 export { default as MelissaDyrdahl } from './melissa-dyrdahl.webp';
