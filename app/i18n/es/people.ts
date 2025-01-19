@@ -171,12 +171,12 @@ const people: People = {
         name: "Adam Leipzig",
         role: "Asesor Ejecutivo",
         texts: [
-          "CEO de Entertainment Media Partners",
+          "Director Ejecutivo de Entertainment Media Partners",
           "Ex Presidente de National Geographic Films",
-          "Profesor Profesional en la Escuela de Negocios Haas de Berkeley"
+          "Miembro del profesorado profesional en la Escuela de Negocios de Berkeley Haas"
         ],
         link: "https://www.linkedin.com/in/adamleipzig/"
-      },
+      },      
       {
         img: RokSosic,
         name: 'Rok Sosic',
@@ -264,13 +264,13 @@ const people: People = {
       {
         img: KoheiWakamiya,
         name: "Kohei Wakamiya",
-        role: "Asesor de IA de Audio",
+        role: "Asesor de Inteligencia Artificial de Voz",
         texts: [
           "Profesor Asistente de Diseño Acústico",
           "Universidad de Kyushu"
         ],
         link: "https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html"
-      },
+      },      
       {
         img: TamerFahmy,
         name: 'Tamer Fahmy',
