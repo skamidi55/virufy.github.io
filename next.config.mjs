@@ -8,7 +8,7 @@ const nextConfig = {
    * @see https://nextjs.org/docs/app/building-your-application/deploying/static-exports
    */
 
-  output: 'export',
+  // output: 'export',
 
   /**
    * Set base path. This is the slug of your GitHub repository.
@@ -21,6 +21,35 @@ const nextConfig = {
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
   basePath: isProd ? '/minimal-i18n-with-app-router' : '',
+
+  /**
+   * Add a custom server route for redirection
+   */
+  async redirects() {
+    console.log('Redirects function executed');
+    return [
+      // {
+      //   source: '/en/elderlycare/welcome',
+      //   destination: '/elderlycare/welcome',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/en/dubai-map',
+      //   destination: '/dubai-map/index.html',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/study/:path*',
+      //   destination: '/study/index.html',
+      //   permanent: false,
+      // }
+      {
+        source: '/study-app/:path*',
+        destination: '/study-app/index.html',
+        permanent:true,
+      },
+    ];
+  },
 
   /**
    * Add basic configs to optimize static images at build time
@@ -42,6 +71,7 @@ const nextConfig = {
     nextImageExportOptimizer_generateAndUseBlurImages: 'true',
     nextImageExportOptimizer_remoteImageCacheTTL: '0',
   },
+  reactStrictMode: true,
 };
 
 export const { basePath } = nextConfig;

@@ -7,6 +7,7 @@ import { Fragment } from 'react';
 import { usei18n } from '../i18n';
 import Title from './components/Title';
 
+
 const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     home: { introSection, section2 },
@@ -72,19 +73,72 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                         {introSection.buttonText}
                       </button>
                     </Link>
-                  </div>
-                </div>
-                {/* Disclaimers */}
-                <div className="mt-1 flex flex-col items-start sm:ml-10 sm:mt-2 md:ml-0 lg:mt-6">
-                  <div className="w-full max-w-screen-lg">
-                    {introSection.disclaimers.map((disclaimer, i) => (
-                      <p
-                        key={i}
-                        className="xl:text-md text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-sm md:leading-5 lg:text-base lg:leading-6 xl:leading-7"
+
+                    <Link href={`/elderlycare/welcome`}>
+                      <button
+                        className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
+                        style={{
+                          borderRadius: '50px',
+                          background: 'white',
+                        }}
                       >
-                        {disclaimer}
-                      </p>
-                    ))}
+                        elderly
+                      </button>
+                    </Link>
+
+
+                
+                    import Link from 'next/link';
+
+
+    <div>
+
+      <Link legacyBehavior href="/study/index.html">
+        <a target="_blank">Launch Inner App</a>
+      </Link>
+    </div>
+
+
+
+export default Home;
+
+      
+
+                    <Link href={`/dubai-map/index.html`}>
+                      <button
+                        className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
+                        style={{
+                          borderRadius: '50px',
+                          background: 'white',
+                        }}
+                      >
+                        dubai-map
+                      </button>
+                    </Link>
+
+                    <Link href={`/demo/index.html`}>
+                      <button
+                        className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
+                        style={{
+                          borderRadius: '50px',
+                          background: 'white',
+                        }}
+                      >
+                        demo
+                      </button>
+                    </Link>
+
+                    <Link href={`/demo-predict/index.html`}>
+                      <button
+                        className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
+                        style={{
+                          borderRadius: '50px',
+                          background: 'white',
+                        }}
+                      >
+                        demo-predict
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
