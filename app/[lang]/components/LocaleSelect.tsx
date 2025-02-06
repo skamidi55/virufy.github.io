@@ -27,13 +27,17 @@ const LocaleSelect = () => {
   const currPath = usePathname();
 
   let locale: Locale = i18n.defaultLocale;
-  const localeMatch = currPath.match(localeRegex);
-  if (localeMatch) {
-    locale = localeMatch[1] as Locale;
+  
+  // Add null check for currPath
+  if (currPath) {
+    const localeMatch = currPath.match(localeRegex);
+    if (localeMatch) {
+      locale = localeMatch[1] as Locale;
+    }
   }
 
   const handleLocaleChange = (newLocale: Locale) => {
-    const newPath = currPath.replace(localeRegex, `/${newLocale}`);
+    const newPath = currPath ? currPath.replace(localeRegex, `/${newLocale}`) : `/${newLocale}`;
     router.push(newPath);
     setDropdownOpen(false);
   };

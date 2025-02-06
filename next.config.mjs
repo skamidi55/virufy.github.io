@@ -44,8 +44,8 @@ const nextConfig = {
       //   permanent: false,
       // }
       {
-        source: '/study-app/:path*',
-        destination: '/study-app/index.html',
+        source: '/demo/:path*',
+        destination: '/demo/index.html',
         permanent:true,
       },
     ];

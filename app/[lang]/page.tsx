@@ -85,12 +85,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                         elderly
                       </button>
                     </Link>
-
-
-                
-                    import Link from 'next/link';
-
-
     <div>
 
       <Link legacyBehavior href="/study/index.html">
