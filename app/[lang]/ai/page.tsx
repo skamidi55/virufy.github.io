@@ -18,7 +18,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       <section>
         <div className="relative bg-[#4883e3]">
           <ExportedImage
-            className="absolute h-full w-full object-cover opacity-60"
+            className="absolute h-full w-full object-cover opacity-30"
             src={SplashBackground}
             alt=""
             priority
@@ -34,7 +34,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   text.type === 'text' ? (
                     <Fragment key={i}>{text.text}</Fragment>
                   ) : (
-                    <span key={i} className="text-blue-500">
+                    <span key={i} className="text-green-400 font-bold">
                       {text.text}
                     </span>
                   ),
