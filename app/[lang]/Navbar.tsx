@@ -163,7 +163,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
                         activeLink === 'Home'
                           ? 'solid border-b-2 py-2'
                           : 'relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -178,7 +178,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
                         activeLink === 'Technology'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -256,7 +256,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
                         activeLink === 'About Us'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -305,7 +305,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
                         activeLink === 'Media'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -340,7 +340,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
                         activeLink === 'FAQ'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
