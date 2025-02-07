@@ -26,7 +26,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               basePath={basePath}
             />
           </div>
-
           {/* Welcome text */}
           <div className="absolute inset-0 flex items-start justify-center p-4 text-center text-white sm:text-left md:p-8 lg:p-12">
             <div className="mx-auto flex max-w-screen-xl flex-col">
@@ -45,7 +44,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     />
                   </div>
                 </div>
-
                 {/* Introducing Virufy section */}
                 <div className="mt-14 flex flex-col items-start space-y-2 sm:mt-24 md:mt-56 md:space-y-8 lg:mt-80 xl:mt-[40rem]">
                   <div className="w-full max-w-md md:max-w-3xl xl:max-w-5xl">
@@ -61,20 +59,21 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       )}
                     </p>
                   </div>
-
                   {/* Demo app button */}
-                  <div className="mt-2 flex w-full justify-center px-0">
-                    <Link href={`/study`}>
+                  <div className="mt-2 flex w-full max-w-md justify-center px-0 md:block md:max-w-lg">
+                    <Link href={`/${lang}/ai`}>
                       <button
                         className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
-                        style={{ borderRadius: '50px', background: 'white' }}
+                        style={{
+                          borderRadius: '50px',
+                          background: 'white',
+                        }}
                       >
                         {introSection.buttonText}
                       </button>
                     </Link>
                   </div>
                 </div>
-
                 {/* Disclaimers */}
                 <div className="mt-1 flex flex-col items-start sm:ml-10 sm:mt-2 md:ml-0 lg:mt-6">
                   <div className="w-full max-w-screen-lg">
@@ -89,7 +88,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   </div>
                 </div>
               </div>
-
               {/* How it works section */}
               <div className="absolute bottom-6 ml-24 mt-4 flex max-w-[50rem] flex-col items-center px-8 sm:bottom-12 sm:ml-32 sm:mr-8 sm:mt-8 sm:space-y-2 md:bottom-32 md:ml-48 md:space-y-8 lg:ml-72 lg:mr-20 lg:mt-16 xl:bottom-60 xl:mt-60">
                 <p className="text-xs leading-8 sm:leading-6 md:text-2xl md:leading-8 lg:text-[1.75rem] lg:leading-9 xl:text-[2rem] xl:leading-10">
@@ -127,7 +125,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     {section2.subtext}
                   </p>
                 </div>
-
                 {/* Text next to phone img */}
                 <div className="mt-0 flex w-full flex-col justify-between px-8 text-center sm:flex-col xl:mt-8 xl:flex-row xl:px-24 xl:text-start">
                   <div className="order-2 flex flex-col items-center px-0 sm:w-full xl:order-1 xl:mt-16 xl:w-1/2 xl:items-start xl:px-24">
@@ -145,7 +142,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                         </Fragment>
                       ))}
                     </div>
-
                     {/* Disclaimer */}
                     <div className="mt-8 flex w-full flex-col items-center xl:mt-16 xl:items-start">
                       <div className="w-full">
@@ -155,7 +151,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       </div>
                     </div>
                   </div>
-
                   {/* Phone img */}
                   <div className="order-1 mt-8 flex justify-center xl:order-2 xl:mt-0 xl:w-1/2">
                     <div className="relative w-auto">
@@ -169,13 +164,15 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     </div>
                   </div>
                 </div>
-
                 {/* Our technology button */}
                 <div className="mx-auto mb-8 mt-8 flex w-full max-w-md items-center justify-center px-0 md:max-w-lg xl:mt-0">
                   <Link href={`/${lang}/ai`}>
                     <button
                       className="medium primary h-[45px] w-[315px] text-black xl:h-[65px] xl:w-[250px]"
-                      style={{ borderRadius: '50px', background: 'white' }}
+                      style={{
+                        borderRadius: '50px',
+                        background: 'white',
+                      }}
                     >
                       {section2.buttonText}
                     </button>
