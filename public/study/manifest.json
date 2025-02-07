@@ -15,7 +15,7 @@
       "purpose": "maskable any"
     }
   ],
-  "start_url": "/study/",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#13C2C2",
   "background_color": "#F9F9F9"

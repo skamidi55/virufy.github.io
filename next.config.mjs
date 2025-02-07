@@ -25,28 +25,24 @@ const nextConfig = {
   /**
    * Add a custom server route for redirection
    */
-  async redirects() {
+  async rewrites() {
     console.log('Redirects function executed');
     return [
-      // {
-      //   source: '/en/elderlycare/welcome',
-      //   destination: '/elderlycare/welcome',
-      //   permanent: true,
-      // },
-      // {
-      //   source: '/en/dubai-map',
-      //   destination: '/dubai-map/index.html',
-      //   permanent: true,
-      // },
-      // {
-      //   source: '/study/:path*',
-      //   destination: '/study/index.html',
-      //   permanent: false,
-      // }
+      {
+        source: '/clinic/:path*',
+        destination: '/clinic/index.html',
+      },
       {
         source: '/demo/:path*',
         destination: '/demo/index.html',
-        permanent:true,
+      },
+      {
+        source: '/elderlycare/:path*',
+        destination: '/elderlycare/index.html',
+      },
+      {
+        source: '/study/:path*',
+        destination: '/study/index.html',
       },
     ];
   },
