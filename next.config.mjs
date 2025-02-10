@@ -8,7 +8,7 @@ const nextConfig = {
    * @see https://nextjs.org/docs/app/building-your-application/deploying/static-exports
    */
 
-  output: 'export',
+  // output: 'export',
 
   /**
    * Set base path. This is the slug of your GitHub repository.
@@ -41,6 +41,27 @@ const nextConfig = {
     nextImageExportOptimizer_exportFolderName: 'nextImageExportOptimizer',
     nextImageExportOptimizer_generateAndUseBlurImages: 'true',
     nextImageExportOptimizer_remoteImageCacheTTL: '0',
+  },
+  async rewrites() {
+    console.log('Redirects function executed');
+    return [
+      {
+        source: '/clinic/:path*',
+        destination: '/clinic/index.html',
+      },
+      {
+        source: '/demo/:path*',
+        destination: '/demo/index.html',
+      },
+      {
+        source: '/elderlycare/:path*',
+        destination: '/elderlycare/index.html',
+      },
+      {
+        source: '/study/:path*',
+        destination: '/study/index.html',
+      },
+    ];
   },
 };
 

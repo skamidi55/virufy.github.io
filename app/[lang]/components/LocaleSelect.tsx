@@ -24,7 +24,7 @@ const LocaleSelect = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
-  const currPath = usePathname();
+  const currPath = usePathname() || ''; // Ensure currPath is always a string
 
   let locale: Locale = i18n.defaultLocale;
   const localeMatch = currPath.match(localeRegex);
