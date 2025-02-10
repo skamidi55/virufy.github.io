@@ -1,32 +1,12 @@
 /** @type {import('next').NextConfig} */
 
 const isProd = process.env.NODE_ENV === 'production';
+
+const basePath = isProd ? '/minimal-i18n-with-app-router' : '';
+
 const nextConfig = {
-  /**
-   * Enable static exports for the App Router.
-   *
-   * @see https://nextjs.org/docs/app/building-your-application/deploying/static-exports
-   */
-
-  // output: 'export',
-
-  /**
-   * Set base path. This is the slug of your GitHub repository.
-   * For example, if the Github repo is named 'xyz', then by default,
-   * the site will be deployed to https://user.github.io/xyz.
-   * This means basePath should be be set to '/xyz'.
-   *
-   * Note: If a custom domain is used (ie. virufy.org), basePath can be removed
-   * or set to an empty string.
-   * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
-   */
-  basePath: isProd ? '/minimal-i18n-with-app-router' : '',
-
-  /**
-   * Add basic configs to optimize static images at build time
-   *
-   * @see https://github.com/Niels-IO/next-image-export-optimizer?tab=readme-ov-file#basic-configuration
-   */
+  output: 'export',
+  basePath,
   images: {
     loader: 'custom',
     imageSizes: [256, 384],
@@ -43,7 +23,6 @@ const nextConfig = {
     nextImageExportOptimizer_remoteImageCacheTTL: '0',
   },
   async rewrites() {
-    console.log('Redirects function executed');
     return [
       {
         source: '/clinic/:path*',
@@ -65,5 +44,5 @@ const nextConfig = {
   },
 };
 
-export const { basePath } = nextConfig;
-export default nextConfig;
+export default nextConfig; // Correct ES module syntax
+export { basePath }; // Properly export basePath
