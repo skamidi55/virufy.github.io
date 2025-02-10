@@ -12,11 +12,11 @@ const DiseasesNavbar = ({ lang }: { lang: Locale }) => {
       <NavItem
         href={`/${lang}/covid19`}
         text="COVID-19"
-        activePath={activePath}
+        activePath={activePath ?? ''}
       />
-      <NavItem href={`/${lang}/copd`} text="COPD" activePath={activePath} />
-      <NavItem href={`/${lang}/flu`} text="FLU" activePath={activePath} />
-      <NavItem href={`/${lang}/rsv`} text="RSV" activePath={activePath} />
+      <NavItem href={`/${lang}/copd`} text="COPD" activePath={activePath  ?? ''} />
+      <NavItem href={`/${lang}/flu`} text="FLU" activePath={activePath  ?? ''} />
+      <NavItem href={`/${lang}/rsv`} text="RSV" activePath={activePath  ?? ''} />
     </nav>
   );
 };
