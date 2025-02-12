@@ -106,14 +106,14 @@ const faq: FAQ = {
         },
         {
           question:
-            'Where can I download the app? Will it be available for iOS and Android?',
+            'Is your app available for iOS or Android?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'The app will be available for usage on our mobile friendly website as we need government or medical approval in some countries to put our app into the official app stores. The app can be connected to and from a smartphone. Thus, it is compatible with any operating system including iOS or Android.',
+                  text: 'Our app is designed as a web app, so it can be used from the web browser on any mobile device. It does not require a separate download or install.',
                 },
               ],
             },
