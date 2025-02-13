@@ -6,6 +6,7 @@ export interface NavbarType {
   media: Media;
   faq: string;
   donate: DonateSection;
+  joinUs: JoinUsSection;
 }
 
 export interface OurTechnology {
@@ -40,3 +41,7 @@ interface DonateSection {
   buttonText: string;
   optionsTitle: string;
 }
+
+export interface JoinUsSection {
+  buttonText: string;
+}  

@@ -18,7 +18,7 @@ import { ButtonSize, ButtonType } from './themes';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
-    navbar: { home, ourTechnology, aboutUs, media, faq, donate }, // re add coughcheck here when needed
+    navbar: { home, ourTechnology, aboutUs, media, faq, donate, joinUs }, // re add coughcheck here when needed
   } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
@@ -354,6 +354,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li>
                   <LocaleSelect />
                 </li>
+                <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
+                <button
+                  className={`${ButtonType.secondary} ${navbar ? 'h-[45px] w-[131px]' : ButtonSize.medium}`}
+                >
+                  <Link href={`/${lang}/get-involved`}>{joinUs.buttonText}</Link>
+                </button>
+              </li>
+
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                   <button
                     onClick={() => setShowModal(true)}
