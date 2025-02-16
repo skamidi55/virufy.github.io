@@ -29,7 +29,7 @@ const PressReleaseDubai = () => {
           <div>
             <p>
               Virufy’s team includes co-researchers from Stanford University,
-              the University of South Dakota, and the University of Fukui in
+              Harvard University, the University of South Dakota, and the University of Fukui in
               Japan. These collaborators are committed to harnessing technology
               empowering global change through innovation. Their project’s
               potential impact on global public health exemplifies the values
