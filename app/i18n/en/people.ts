@@ -144,7 +144,7 @@ const people: People = {
         role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
         texts: [
           'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
-          'MBA - Stanford Graduate School of Business',
+          'MBA - Stanford GSB',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
@@ -161,7 +161,7 @@ const people: People = {
         role: 'Executive Advisor',
         texts: [
           'Founder & Chairman - China Silicon Valley',
-          'MBA - Stanford Graduate School of Business',
+          'MBA - Stanford GSB',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
@@ -277,10 +277,10 @@ const people: People = {
       {
         img: ShirinHasan,
         name: 'Shirin Hasan',
-        role: 'Regulatory Affairs Advisor',
+        role: 'Clinical, Medical, Regulatory Affairs Advisor',
         texts: [
-          'Former Director of Clinical Affairs, Medtronic',
-          'M.S., Biochemistry, University of Mumbai',
+          'Former Head of Clinical Affairs, Medtronic',
+          'M.S., Biochemistry, SJSU/Stanford',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
       },

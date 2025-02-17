@@ -255,7 +255,7 @@ const people: People = {
           '音声AIアドバイザー',
           '九州大学'
         ],
-        link: 'https://www.linkedin.com/in/adamleipzig/',
+        link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_ja.html',
       },
       {
         img: TamerFahmy,
