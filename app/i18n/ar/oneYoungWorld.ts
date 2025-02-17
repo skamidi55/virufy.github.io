@@ -19,7 +19,7 @@ const oneYoungWorld: OneYoungWorld = {
   },
   navbarTexts: {
     oyw: 'One Young World',
-    teamLeads: 'قادة الفريق',
+    teamLeads: 'سفراء الفريق',
   },
   oyw: {
     bgImage: BgBody,
