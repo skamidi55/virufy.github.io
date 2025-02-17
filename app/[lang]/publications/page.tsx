@@ -33,7 +33,7 @@ const PublicationsPage = ({
         <div className="relative bg-[#255292]">
           <ExportedImage
             src={PhoneHeader}
-            className="absolute h-full w-full object-cover opacity-60"
+            className="absolute h-full w-full object-cover opacity-30"
             alt=""
             priority
             basePath={basePath}
@@ -41,7 +41,7 @@ const PublicationsPage = ({
 
           {/* Text Container */}
           <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 px-10 pb-40 pt-64 text-center font-medium opacity-95">
-            <h1 className="text-4xl text-green-500 sm:text-5xl">
+            <h1 className="text-4xl text-green-500 sm:text-5xl font-bold">
               {publicationsSection.title}
             </h1>
             {publicationsSection.texts.map((text, i) => (
