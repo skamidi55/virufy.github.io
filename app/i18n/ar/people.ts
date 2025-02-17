@@ -9,7 +9,6 @@ import {
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
-  ManujAggarwal,
   AdamLeipzig,
   KoheiWakamiya,
   MarkHaseltine,
@@ -224,13 +223,6 @@ const people: People = {
         role: 'مستشار تنفيذي مستقبلي',
         texts: ['مؤسس - Tannan FM Radio', 'المدير المعماري، قطار الرصاصة'],
         link: 'http://tannan.fm/contents/about-us.html',
-      },
-      {
-        img: ManujAggarwal,
-        name: 'مانوج أغاروال',
-        role: 'مستشار تنفيذي في الذكاء الاصطناعي، الاستراتيجية والتسويق',
-        texts: ['رئيس الابتكار - TetraNoodle Technologies'],
-        link: 'https://www.linkedin.com/in/manujaggarwal/',
       },
       {
         img: LesAtlas,

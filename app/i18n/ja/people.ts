@@ -11,7 +11,6 @@ import {
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
-  ManujAggarwal,
   MarkHaseltine,
   MayXu,
   MelissaDyrdahl,
@@ -216,13 +215,6 @@ const people: People = {
         role: 'エグゼクティブビジョナリーアドバイザー',
         texts: ['Tannan FMラジオ創設者', '新幹線主任設計者'],
         link: 'http://tannan.fm/contents/about-us.html',
-      },
-      {
-        img: ManujAggarwal,
-        name: 'マヌージ・アッガルワル',
-        role: 'エグゼクティブAI、戦略およびマーケティングアドバイザー',
-        texts: ['TetraNoodle Technologies最高イノベーション責任者'],
-        link: 'https://www.linkedin.com/in/manujaggarwal/',
       },
       {
         img: LesAtlas,

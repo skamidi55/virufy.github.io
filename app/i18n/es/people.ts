@@ -11,7 +11,6 @@ import {
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
-  ManujAggarwal,
   MarkHaseltine,
   MayXu,
   MelissaDyrdahl,
@@ -220,13 +219,6 @@ const people: People = {
         role: 'Executive Visionary Advisor',
         texts: ['Founder - Tannan FM Radio', 'Lead Architect, Bullet Train'],
         link: 'http://tannan.fm/contents/about-us.html',
-      },
-      {
-        img: ManujAggarwal,
-        name: 'Manuj Aggarwal',
-        role: 'Executive AI, Strategy And Marketing Advisor',
-        texts: ['Chief Innovation Officer - TetraNoodle Technologies'],
-        link: 'https://www.linkedin.com/in/manujaggarwal/',
       },
       {
         img: LesAtlas,

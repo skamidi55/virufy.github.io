@@ -14,7 +14,6 @@ export { default as KoheiWakamiya } from './kohei-wakamiya.webp';
 export { default as KutsunaSatoshi } from './kutsuna-satoshi.webp';
 export { default as LesAtlas } from './les-atlas.webp';
 export { default as MadhavDatt } from './madhav-datt.webp';
-export { default as ManujAggarwal } from './manuj-aggarwal.webp';
 export { default as MarkHaseltine } from './mark-haseltine.webp';
 export { default as MayXu } from './may-xu.webp';
 export { default as MelissaDyrdahl } from './melissa-dyrdahl.webp';
