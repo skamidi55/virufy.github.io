@@ -16,7 +16,6 @@ import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 
-
 const enMetadata: I18nData = {
   ai,
   amilsStory,
