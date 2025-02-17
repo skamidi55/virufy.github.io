@@ -22,7 +22,7 @@ import {
 import { type TeamLeadsType } from '../types/teamLeads';
 
 const teamLeads: TeamLeadsType = {
-  title: 'OYW قادة الفريق',
+  title: 'OYW السفراء',
   cards: [
     {
       name: 'أميل خانزادا',

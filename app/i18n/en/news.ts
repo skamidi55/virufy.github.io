@@ -100,7 +100,7 @@ const pressReleases: PressReleases = {
     {
       title: 'Sounds of COVID-19 Workshop',
       date: '2020',
-      subText: 'One Young World',
+      subText: '',
       url: 'https://health-sounds.cl.cam.ac.uk/workshop20/short-talks.html',
       linkText: 'Read More',
     },

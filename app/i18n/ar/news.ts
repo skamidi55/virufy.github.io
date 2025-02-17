@@ -96,7 +96,7 @@ const pressReleases: PressReleases = {
     {
       title: 'ورشة عمل أصوات COVID-19',
       date: '2020',
-      subText: 'One Young World',
+      subText: '',
       url: 'https://health-sounds.cl.cam.ac.uk/workshop20/short-talks.html',
       linkText: 'اقرأ المزيد',
     },
