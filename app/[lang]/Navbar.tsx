@@ -356,17 +356,17 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 </li>
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                 <button
-                  className={`${ButtonType.secondary} ${navbar ? 'h-[45px] w-[131px]' : ButtonSize.medium}`}
+                  className={`${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
                 >
-                  <Link href={`/${lang}/get-involved`}>{joinUs.buttonText}</Link>
+                  <Link href={`/${lang}/job-listing`}>{joinUs.buttonText}</Link>
                 </button>
               </li>
 
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                   <button
                     onClick={() => setShowModal(true)}
-                    className={`${ButtonType.primary} ${navbar ? 'h-[45px] w-[131px]' : ButtonSize.medium}`}
-                  >
+                    className={`${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                    >
                     <Link href="#">{donate.buttonText}</Link>
                   </button>
                 </li>

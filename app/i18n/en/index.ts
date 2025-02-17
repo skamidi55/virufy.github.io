@@ -13,7 +13,6 @@ import pressReleases from './news';
 import publications from './publications';
 import shareYourCough from './shareYourCough';
 import story from './story';
-import getInvolved from './getinvolved';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 
@@ -33,7 +32,6 @@ const enMetadata: I18nData = {
   publications,
   shareYourCough,
   story,
-  getInvolved,
   supporters,
   teamLeads,
 };

@@ -19,7 +19,7 @@ const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <section>
           <div className="relative bg-[#2b5290]">
             <ExportedImage
-              className="absolute h-full w-full object-cover opacity-40"
+              className="absolute h-full w-full object-cover opacity-30"
               src={PressReleasesBackground}
               alt=""
               priority
@@ -27,7 +27,7 @@ const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             />
 
             <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 px-10 py-64 text-center font-medium opacity-95">
-              <h1 className="text-4xl text-green-500 sm:text-5xl">
+              <h1 className="text-4xl text-green-500 sm:text-5xl font-bold">
                 {pressReleaseSection.title}
               </h1>
             </div>
