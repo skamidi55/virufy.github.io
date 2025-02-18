@@ -31,6 +31,9 @@ export const navbar: NavbarType = {
     buttonText: 'Donar',
     optionsTitle: 'Donate Options',
   },
+  joinUs: {
+    buttonText:  'Únete a Nosotros',
+  },
 };
 
 export default navbar;
