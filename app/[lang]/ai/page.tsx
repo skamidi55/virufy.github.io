@@ -3,9 +3,26 @@ import { basePath } from '@/next.config.mjs';
 import { SplashBackground, WaveBackground } from '@/public/images/ai/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
+import { Metadata } from 'next';
 import { Fragment } from 'react';
 import { usei18n } from '../../i18n';
 import AiCard from './AiCard';
+
+// Overwrite the MetaData for this page
+export const metadata: Metadata = {
+  title: 'Virufy: Our Technology',
+  description: 'A look at the science and technology behind Virufy including our AI and research',
+  openGraph: {
+      title: 'Virufy: Our Technology',
+      description: 'A look at the science and technology behind Virufy including our AI and research',
+      url: 'http://localhost:3000/en/ai',  // Replace with live URL
+      type: 'website',
+  },
+  keywords: ['ai', 'technology', 'virufy technology', 'virufy ai'],
+  alternates: {
+      canonical: 'http://localhost:3000/en/ai' // Replace with live URL
+  }
+};
 
 const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {

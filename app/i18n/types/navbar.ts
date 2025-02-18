@@ -10,7 +10,7 @@ export interface NavbarType {
 
 export interface OurTechnology {
   section: string;
-  howItWorks: string;
+  // howItWorks: string;
 }
 
 export interface CoughCheckApp {

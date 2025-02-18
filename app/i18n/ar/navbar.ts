@@ -4,7 +4,7 @@ export const navbar: NavbarType = {
   home: 'الصفحة الرئيسية',
   ourTechnology: {
     section: 'التكنولوجيا',
-    howItWorks: 'الذكاء الاصطناعي',
+    // howItWorks: 'الذكاء الاصطناعي',
   },
   coughCheckApp: {
     section: 'تطبيق كوف تشيك',
