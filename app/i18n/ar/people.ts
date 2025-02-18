@@ -9,7 +9,6 @@ import {
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
-  ManujAggarwal,
   AdamLeipzig,
   KoheiWakamiya,
   MarkHaseltine,
@@ -86,6 +85,7 @@ const people: People = {
         texts: [
           'مؤسس - Green the Gene',
           'الممثل العالمي السابق للشباب - الأمم المتحدة EP',
+          'ماجستير في إدارة الأعمال، كلية هارفارد للأعمال',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
@@ -108,7 +108,7 @@ const people: People = {
       {
         img: RonanDunlop,
         name: 'رونان دونلوب',
-        role: 'مستشار غير ربحي تنفيذي',
+        role: 'مستشار تسويق تنفيذي',
         texts: [
           'رئيس التسويق السابق - Pivotal/VMWare',
           'نائب رئيس التسويق - Cohuman',
@@ -119,7 +119,7 @@ const people: People = {
         img: MarkHaseltine,
         name: 'مارك هاسلتين',
         role: 'مستشار تنفيذي',
-        texts: ['CTO / CPO السابق - edX', 'خريج علوم الكمبيوتر - MIT'],
+        texts: ['CTO / CPO السابق - edX، GoDaddy', 'خريج علوم الكمبيوتر - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {
@@ -226,13 +226,6 @@ const people: People = {
         link: 'http://tannan.fm/contents/about-us.html',
       },
       {
-        img: ManujAggarwal,
-        name: 'مانوج أغاروال',
-        role: 'مستشار تنفيذي في الذكاء الاصطناعي، الاستراتيجية والتسويق',
-        texts: ['رئيس الابتكار - TetraNoodle Technologies'],
-        link: 'https://www.linkedin.com/in/manujaggarwal/',
-      },
-      {
         img: LesAtlas,
         name: 'الدكتور ليس أطلس',
         role: 'مستشار الصوت والتعلم الآلي',
@@ -287,10 +280,10 @@ const people: People = {
       {
         img: ShirinHasan,
         name: 'شيرين حسن',
-        role: 'مستشارة شؤون تنظيمية',
+        role: 'مستشار الشؤون السريرية والطبية والتنظيمية',
         texts: [
-          'مدير سابق للشؤون السريرية، Medtronic',
-          'ماجستير في الكيمياء الحيوية، جامعة مومباي',
+          'الرئيس السابق للشؤون السريرية، مدترونيك',
+          'ماجستير، الكيمياء الحيوية، جامعة سان خوزيه  / ستانفورد',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
       },

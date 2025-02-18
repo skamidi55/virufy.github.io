@@ -11,7 +11,6 @@ import {
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
-  ManujAggarwal,
   MarkHaseltine,
   MayXu,
   MelissaDyrdahl,
@@ -80,7 +79,7 @@ const people: People = {
         img: MadhavDatt,
         name: 'マダブ・ダット',
         role: 'エグゼクティブ非営利アドバイザー',
-        texts: ['Green the Gene創設者', '国連環境計画元青年代表'],
+        texts: ['Green the Gene創設者', '国連環境計画元青年代表', 'MBA、ハーバード・ビジネス・スクール'],
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
       {
@@ -102,7 +101,7 @@ const people: People = {
       {
         img: RonanDunlop,
         name: 'ローナン・ダンロップ',
-        role: 'エグゼクティブ非営利アドバイザー',
+        role: 'エグゼクティブマーケティングアドバイザー',
         texts: [
           '元Pivotal/VMWareマーケティング責任者',
           'Cohumanマーケティング副社長',
@@ -113,7 +112,7 @@ const people: People = {
         img: MarkHaseltine,
         name: 'マーク・ハセルトン',
         role: 'エグゼクティブアドバイザー',
-        texts: ['元edX CTO/CPO', 'MITコンピュータサイエンス卒業生'],
+        texts: ['元edX、GoDaddy CTO/CPO', 'MITコンピュータサイエンス卒業生'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {
@@ -218,13 +217,6 @@ const people: People = {
         link: 'http://tannan.fm/contents/about-us.html',
       },
       {
-        img: ManujAggarwal,
-        name: 'マヌージ・アッガルワル',
-        role: 'エグゼクティブAI、戦略およびマーケティングアドバイザー',
-        texts: ['TetraNoodle Technologies最高イノベーション責任者'],
-        link: 'https://www.linkedin.com/in/manujaggarwal/',
-      },
-      {
         img: LesAtlas,
         name: 'レス・アトラス博士',
         role: 'オーディオおよび機械学習アドバイザー',
@@ -263,7 +255,7 @@ const people: People = {
           '音声AIアドバイザー',
           '九州大学'
         ],
-        link: 'https://www.linkedin.com/in/adamleipzig/',
+        link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_ja.html',
       },
       {
         img: TamerFahmy,
