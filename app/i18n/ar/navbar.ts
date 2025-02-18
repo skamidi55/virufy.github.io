@@ -31,6 +31,9 @@ export const navbar: NavbarType = {
     buttonText: 'تبرع',
     optionsTitle: 'خيارات التبرع',
   },
+  joinUs: {
+    buttonText: 'انضم إلينا',
+  },
 };
 
 export default navbar;

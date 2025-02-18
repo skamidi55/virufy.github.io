@@ -31,6 +31,9 @@ export const navbar: NavbarType = {
     buttonText: '寄付',
     optionsTitle: '寄付方法',
   },
+  joinUs: {
+    buttonText: '参加する', 
+  },
 };
 
 export default navbar;
