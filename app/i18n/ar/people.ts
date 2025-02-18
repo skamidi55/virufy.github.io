@@ -85,6 +85,7 @@ const people: People = {
         texts: [
           'مؤسس - Green the Gene',
           'الممثل العالمي السابق للشباب - الأمم المتحدة EP',
+          'ماجستير في إدارة الأعمال، كلية هارفارد للأعمال',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
@@ -118,7 +119,7 @@ const people: People = {
         img: MarkHaseltine,
         name: 'مارك هاسلتين',
         role: 'مستشار تنفيذي',
-        texts: ['CTO / CPO السابق - edX', 'خريج علوم الكمبيوتر - MIT'],
+        texts: ['CTO / CPO السابق - edX، GoDaddy', 'خريج علوم الكمبيوتر - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {

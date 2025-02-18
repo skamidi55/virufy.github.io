@@ -84,6 +84,7 @@ const people: People = {
         texts: [
           'Founder - Green the Gene',
           'Former Global Representative for Youth - UN EP',
+          'MBA, Harvard Business School',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
@@ -117,7 +118,7 @@ const people: People = {
         img: MarkHaseltine,
         name: 'Mark Haseltine',
         role: 'Executive Advisor',
-        texts: ['Former CTO/CPO - edX', 'Computer Science alumnus - MIT'],
+        texts: ['Former CTO/CPO - edX, GoDaddy', 'Computer Science alumnus - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {

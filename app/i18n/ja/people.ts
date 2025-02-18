@@ -79,7 +79,7 @@ const people: People = {
         img: MadhavDatt,
         name: 'マダブ・ダット',
         role: 'エグゼクティブ非営利アドバイザー',
-        texts: ['Green the Gene創設者', '国連環境計画元青年代表'],
+        texts: ['Green the Gene創設者', '国連環境計画元青年代表', 'MBA、ハーバード・ビジネス・スクール'],
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
       {
@@ -112,7 +112,7 @@ const people: People = {
         img: MarkHaseltine,
         name: 'マーク・ハセルトン',
         role: 'エグゼクティブアドバイザー',
-        texts: ['元edX CTO/CPO', 'MITコンピュータサイエンス卒業生'],
+        texts: ['元edX、GoDaddy CTO/CPO', 'MITコンピュータサイエンス卒業生'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {
