@@ -106,7 +106,7 @@ const people: People = {
       {
         img: RonanDunlop,
         name: 'Ronan Dunlop',
-        role: 'Executive Nonprofit Advisor',
+        role: 'Executive Marketing Advisor',
         texts: [
           'Former Head of Marketing - Pivotal/VMWare',
           'VP of Marketing - Cohuman',

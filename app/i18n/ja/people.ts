@@ -101,7 +101,7 @@ const people: People = {
       {
         img: RonanDunlop,
         name: 'ローナン・ダンロップ',
-        role: 'エグゼクティブ非営利アドバイザー',
+        role: 'エグゼクティブマーケティングアドバイザー',
         texts: [
           '元Pivotal/VMWareマーケティング責任者',
           'Cohumanマーケティング副社長',
