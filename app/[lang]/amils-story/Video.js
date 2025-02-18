@@ -1,7 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import ReactPlayer from 'react-player';
+import dynamic from 'next/dynamic';
+
+const ReactPlayer = dynamic(() => import('react-player').then(mod => mod.default), { ssr: false });
 
 export default function Video({ width, height, url }) {
   const [isClient, setIsClient] = useState(false);
@@ -10,6 +12,7 @@ export default function Video({ width, height, url }) {
     // Esta lógica solo se ejecutará en el lado del cliente
     setIsClient(true);
   }, []);
+
   return (
     <>{isClient && <ReactPlayer width={width} height={height} url={url} />}</>
   );
