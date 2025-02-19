@@ -11,7 +11,6 @@ import {
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
-  ManujAggarwal,
   MarkHaseltine,
   MayXu,
   MelissaDyrdahl,
@@ -85,6 +84,7 @@ const people: People = {
         texts: [
           'Founder - Green the Gene',
           'Former Global Representative for Youth - UN EP',
+          'MBA, Harvard Business School',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
@@ -107,7 +107,7 @@ const people: People = {
       {
         img: RonanDunlop,
         name: 'Ronan Dunlop',
-        role: 'Executive Nonprofit Advisor',
+        role: 'Executive Marketing Advisor',
         texts: [
           'Former Head of Marketing - Pivotal/VMWare',
           'VP of Marketing - Cohuman',
@@ -118,7 +118,7 @@ const people: People = {
         img: MarkHaseltine,
         name: 'Mark Haseltine',
         role: 'Executive Advisor',
-        texts: ['Former CTO/CPO - edX', 'Computer Science alumnus - MIT'],
+        texts: ['Former CTO/CPO - edX, GoDaddy', 'Computer Science alumnus - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {
@@ -145,7 +145,7 @@ const people: People = {
         role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
         texts: [
           'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
-          'MBA - Stanford Graduate School of Business',
+          'MBA - Stanford GSB',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
@@ -162,7 +162,7 @@ const people: People = {
         role: 'Executive Advisor',
         texts: [
           'Founder & Chairman - China Silicon Valley',
-          'MBA - Stanford Graduate School of Business',
+          'MBA - Stanford GSB',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
@@ -222,13 +222,6 @@ const people: People = {
         link: 'http://tannan.fm/contents/about-us.html',
       },
       {
-        img: ManujAggarwal,
-        name: 'Manuj Aggarwal',
-        role: 'Executive AI, Strategy And Marketing Advisor',
-        texts: ['Chief Innovation Officer - TetraNoodle Technologies'],
-        link: 'https://www.linkedin.com/in/manujaggarwal/',
-      },
-      {
         img: LesAtlas,
         name: 'Dr. Les Atlas',
         role: 'Audio and Machine Learning Advisor',
@@ -285,10 +278,10 @@ const people: People = {
       {
         img: ShirinHasan,
         name: 'Shirin Hasan',
-        role: 'Regulatory Affairs Advisor',
+        role: 'Clinical, Medical, Regulatory Affairs Advisor',
         texts: [
-          'Former Director of Clinical Affairs, Medtronic',
-          'M.S., Biochemistry, University of Mumbai',
+          'Former Head of Clinical Affairs, Medtronic',
+          'M.S., Biochemistry, SJSU/Stanford',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
       },

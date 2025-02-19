@@ -14,7 +14,7 @@ import { useEffect, useState } from 'react';
 import { usei18n } from '../i18n';
 import LocaleSelect from './components/LocaleSelect';
 import DonateModal from './components/navbar/DonateModal';
-import { ButtonSize, ButtonType } from './themes';
+import { ButtonType } from './themes';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
@@ -358,7 +358,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <button
                   className={`${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
                 >
-                  <Link href={`/${lang}/job-listing`}>{joinUs.buttonText}</Link>
+                  <Link href={`/${lang}/job-listing`}>{joinUs ? joinUs.buttonText : ''}</Link>
                 </button>
               </li>
 

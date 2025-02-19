@@ -22,7 +22,7 @@ import {
 import { type TeamLeadsType } from '../types/teamLeads';
 
 const teamLeads: TeamLeadsType = {
-  title: 'OYW السفراء',
+  title: 'سفراء OYW',
   cards: [
     {
       name: 'أميل خانزادا',
@@ -135,7 +135,7 @@ const teamLeads: TeamLeadsType = {
     },
     {
       name: 'أالانا دويل',
-      texts: ['سفير OYW، الولايات المتحدة الأمريكية'],
+      texts: ['السفير OYW، EE.UU11'],
       image: Allana,
       altText: 'صورة لأالانا دويل',
     },
