@@ -6,6 +6,8 @@ import {
   LinkedInIconWhite,
   XIconDarkGradient,
   XIconWhite,
+  YouTubeIconDarkGradient,
+  YouTubeIconWhite,
 } from '@/public/images/footer/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
@@ -83,6 +85,30 @@ export default function SocialLinks({ lang }) {
           src={XIconDarkGradient}
           alt="X icon"
           className="h-[40px] w-[30px]"
+          basePath={basePath}
+        />
+      </Link>
+      <Link
+        target="_blank"
+        href="https://www.youtube.com/@virufy1993"
+        className={lang === 'en' || lang === 'ar' ? 'hidden lg:flex' : 'hidden'}
+      >
+        <ExportedImage
+          src={YouTubeIconDarkGradient}
+          alt="Youtube icon"
+          className="h-[40px] w-[41px]"
+          basePath={basePath}
+        />
+      </Link>
+      <Link
+        target="_blank"
+        href="https://www.youtube.com/@virufy1993"
+        className={lang === 'en' || lang === 'ar' ? 'flex lg:hidden' : 'hidden'}
+      >
+        <ExportedImage
+          src={YouTubeIconWhite}
+          alt="Youtube icon"
+          className="h-[40px] w-[41px]"
           basePath={basePath}
         />
       </Link>
