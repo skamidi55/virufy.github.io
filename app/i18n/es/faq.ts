@@ -447,7 +447,7 @@ const faq: FAQ = {
                 {
                   type: 'relative-link',
                   text: 'Job Listing',
-                  href: '/join',
+                  href: '/join-us',
                 },
                 {
                   type: 'text',

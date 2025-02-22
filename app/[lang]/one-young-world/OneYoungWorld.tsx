@@ -109,7 +109,7 @@ const OneYoungWorld = ({
             <TestimonialSlider testimonials={testimonials} />
             <Link
               className="w-auto rounded-full bg-white px-6 py-4 text-sm font-medium text-black md:px-12 md:py-4 md:text-base"
-              href={`/${lang}/join`}
+              href={`/${lang}/join-us`}
             >
               {buttonText}
             </Link>

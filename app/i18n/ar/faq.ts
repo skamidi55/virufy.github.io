@@ -443,7 +443,7 @@ const faq: FAQ = {
                 {
                   type: 'relative-link',
                   text: 'قائمة الوظائف',
-                  href: '/join',
+                  href: '/join-us',
                 },
                 {
                   type: 'text',
