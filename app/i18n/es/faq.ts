@@ -105,8 +105,7 @@ const faq: FAQ = {
           ],
         },
         {
-          question:
-            'Is your app available for iOS or Android?',
+          question: 'Is your app available for iOS or Android?',
           answer: [
             {
               type: 'paragraph',
@@ -448,7 +447,7 @@ const faq: FAQ = {
                 {
                   type: 'relative-link',
                   text: 'Job Listing',
-                  href: '/job-listing',
+                  href: '/join',
                 },
                 {
                   type: 'text',

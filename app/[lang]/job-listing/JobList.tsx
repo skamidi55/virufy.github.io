@@ -114,7 +114,7 @@ const JobList = ({
 
                   <div className="flex flex-1 justify-end">
                     <div className="my-auto mr-4">
-                      <Link href={`/${lang}/job-listing/${id}`}>
+                      <Link href={`/${lang}/join/${id}`}>
                         <button className="h-8 w-32 rounded-3xl bg-white font-medium text-black">
                           {applyButtonText}
                         </button>

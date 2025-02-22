@@ -104,8 +104,7 @@ const faq: FAQ = {
           ],
         },
         {
-          question:
-            'هل تطبيقك متوفّر على iOS أو الأندرويد؟',
+          question: 'هل تطبيقك متوفّر على iOS أو الأندرويد؟',
           answer: [
             {
               type: 'paragraph',
@@ -444,7 +443,7 @@ const faq: FAQ = {
                 {
                   type: 'relative-link',
                   text: 'قائمة الوظائف',
-                  href: '/job-listing',
+                  href: '/join',
                 },
                 {
                   type: 'text',
