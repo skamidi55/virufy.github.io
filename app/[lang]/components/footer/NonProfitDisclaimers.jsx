@@ -1,11 +1,27 @@
 import Text from '../Text';
-
+import { basePath } from '@/next.config.mjs';
+import { CandidSeal } from '@/public/images/footer/index';
+import ExportedImage from 'next-image-export-optimizer';
+import Link from 'next/link';
 export default function NonProfitDisclaimers({nonProfitSection}) {
     return (
         <>
-        <a href="https://www.guidestar.org/profile/shared/f0cf98a8-3b5a-495f-86c0-d2d58564086c" target="_blank" className="block mt-4">
-          <img src="https://widgets.guidestar.org/TransparencySeal/10153729" alt="GuideStar Profile" className="mx-auto" />
-        </a>
+        <div className="flex justify-center mt-4">
+          <Link
+            target="_blank"
+            href="https://www.guidestar.org/profile/shared/f0cf98a8-3b5a-495f-86c0-d2d58564086c"
+            className="block"
+          >
+          <ExportedImage
+            src={CandidSeal}
+            alt="GuideStar Profile"
+            className="mx-auto"
+            basePath={basePath}
+            width={100}  
+            height={100}
+          />
+          </Link>
+        </div>
         <div className="align-center mt-10 flex w-full flex-col gap-7 text-white lg:hidden">
             <div className="align-center m-auto max-w-4xl text-center text-[25px]">
               <Text Text={nonProfitSection.title} Style="" TextClassProps="" />
