@@ -44,6 +44,23 @@ const nextConfig = {
         source: '/study/:path*',
         destination: '/study/index.html',
       },
+      {
+        source: '/join',
+        destination: '/join-us',
+      },
+      {
+        source: '/team',
+        destination: '/advisors',
+      },
+
+      {
+        source: '/:lang/join',
+        destination: '/:lang/join-us',
+      },
+      {
+        source: '/:lang/team',
+        destination: '/:lang/advisors',
+      },
     ];
   },
 
