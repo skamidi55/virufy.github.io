@@ -4,7 +4,6 @@ export const navbar: NavbarType = {
   home: 'ホーム',
   ourTechnology: {
     section: '技術',
-    howItWorks: 'AIの仕組み',
   },
   coughCheckApp: {
     section: '咳チェックアプリ',

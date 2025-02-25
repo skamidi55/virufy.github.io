@@ -4,7 +4,6 @@ export const navbar: NavbarType = {
   home: 'Home',
   ourTechnology: {
     section: 'Technology',
-    howItWorks: 'AI',
   },
   coughCheckApp: {
     section: 'CoughCheck App',

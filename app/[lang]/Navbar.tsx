@@ -192,12 +192,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           : 'ml-[-60px] hidden'
                       } hover:flex peer-hover:flex`}
                     >
-                      <Link
-                        className="px-5 py-2 pt-5 text-[white] hover:font-bold"
-                        href={`/${lang}/ai`}
-                      >
-                        {ourTechnology?.howItWorks}
-                      </Link>
                     </div>
                   </div>
                 </li>
