@@ -1,5 +1,5 @@
 'use client';
-import { i18n, type Locale } from '@/i18n-config';
+import { i18n } from '@/i18n-config';
 import RedirectWithSpinner from '../[lang]/components/RedirectWithSpinner';
 
 const TeamPage = () => {
