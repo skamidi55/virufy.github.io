@@ -5,6 +5,7 @@ import {
   FumihikoYokota,
   HiroyukiKunishima,
   JureLeskovec,
+  JesseBump,
   KaraMeister,
   KhwajaShaik,
   KoheiWakamiya,
@@ -60,6 +61,16 @@ const people: People = {
           'Associate Professor of AI - Stanford',
         ],
         link: 'https://www.linkedin.com/in/leskovec/',
+      },
+      {
+        img: JesseBump,
+        name: 'Jesse Bump, Ph.D., MPH, FRSA',
+        role: 'Population Health Advisor',
+        texts: [
+          'Department of Global Health and Population',
+          'Harvard T.H. Chan School of Public Health',
+        ],
+        link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
         img: MelissaDyrdahl,
