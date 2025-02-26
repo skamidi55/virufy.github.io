@@ -8,6 +8,7 @@ export { default as FaisalCheema } from './faisal-cheema.webp';
 export { default as FumihikoYokota } from './fumihiko-yokota.webp';
 export { default as HiroyukiKunishima } from './hiroyuki-kunishima.webp';
 export { default as JureLeskovec } from './jure-leskovec.webp';
+export { default as JesseBump} from './jesse-bump.webp';
 export { default as KaraMeister } from './kara-meister.webp';
 export { default as KhwajaShaik } from './khwaja-shaik.webp';
 export { default as KoheiWakamiya } from './kohei-wakamiya.webp';
