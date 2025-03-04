@@ -191,8 +191,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
                           : 'ml-[-60px] hidden'
                       } hover:flex peer-hover:flex`}
-                    >
-                    </div>
+                    ></div>
                   </div>
                 </li>
                 {/* coughcheck app link */}
@@ -346,13 +345,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <LocaleSelect />
                 </li>
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
-                  <button
-                    className={`${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
-                  >
-                    <Link href={`/${lang}/join-us`}>
+                  <Link href={`/${lang}/join-us`}>
+                    <button
+                      className={`${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                    >
                       {joinUs ? joinUs.buttonText : ''}
-                    </Link>
-                  </button>
+                    </button>
+                  </Link>
                 </li>
 
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
