@@ -507,7 +507,7 @@ const footer: Footer = {
               {
                 type: 'link',
                 text: 'Πολιτική απορρήτου',
-                href: 'https://drive.google.com/file/d/1n8YZTb3bAqLLL5ygVE8-MstdzECcKJ_b/view',
+                href: 'https://drive.google.com/file/d/1lMVygBx3pV_lZBhFtZe5go4UM4mFt0qP/view',
               },
             ],
           },
@@ -597,7 +597,7 @@ const footer: Footer = {
               {
                 type: 'link',
                 text: 'Privacy Policy',
-                href: 'https://drive.google.com/file/d/1fUIe6FBss6WrwsrssVr6OM_2uFFVhESD/view',
+                href: 'https://drive.google.com/file/d/1hnxvDJ5qHBnUi7cnkNdyD4PuWMz8Ntss/view',
               },
             ],
           },
