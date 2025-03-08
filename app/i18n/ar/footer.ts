@@ -382,14 +382,14 @@ const footer: Footer = {
     title: 'سياسة الخصوصية',
     body: [
       {
-        question: 'Argentina',
+        question: 'الأرجنتين',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidad',
+                text: 'سياسة الخصوصية',
                 href: 'https://drive.google.com/file/d/1Fef7l77QP3EZboej6mw_q7fBNrayvs03/view',
               },
             ],
@@ -397,14 +397,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Bolivia',
+        question: 'بوليفيا',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidad',
+                text: 'سياسة الخصوصية',
                 href: 'https://drive.google.com/file/d/1ZSrRivk4YJyyDioqYeAsz0fgNAP3UwVn/view',
               },
             ],
@@ -412,14 +412,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Brazil',
+        question: 'البرازيل',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidade',
+                text: 'سياسة الخصوصية',
                 href: 'https://drive.google.com/file/d/1Zl9QO-Dliik84xjuXCdFGcDOk5GytXr1/view',
               },
             ],
@@ -427,14 +427,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Colombia',
+        question: 'كولومبيا',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidad',
+                text: 'سياسة الخصوصية',
                 href: 'https://drive.google.com/file/d/1eQOx81C5e5CoESYsEnrE9sWhCkTMDPEq/view',
               },
             ],
@@ -442,29 +442,29 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Greece',
+        question: 'اليونان',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Πολιτική απορρήτου',
-                href: 'https://drive.google.com/file/d/1n8YZTb3bAqLLL5ygVE8-MstdzECcKJ_b/view',
+                text: 'سياسة الخصوصية',
+                href: 'https://drive.google.com/file/d/1lMVygBx3pV_lZBhFtZe5go4UM4mFt0qP/view',
               },
             ],
           },
         ],
       },
       {
-        question: 'Mexico',
+        question: 'المكسيك',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Aviso De Privacidad',
+                text: 'سياسة الخصوصية',
                 href: 'https://drive.google.com/file/d/1Qr3cFttfhjUoKxLcQrVEhsuO-OJ6VE0_/view',
               },
             ],
@@ -472,14 +472,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Peru',
+        question: 'بيرو',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidad',
+                text: 'سياسة الخصوصية',
                 href: 'https://drive.google.com/file/d/1UgN2Bu2XIvv2YirLRYloSPlbYln_uzf9/view',
               },
             ],
@@ -487,14 +487,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'United States',
+        question: 'الولايات المتحدة',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Privacy Policy',
+                text: 'سياسة الخصوصية',
                 href: 'https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view',
               },
             ],
@@ -502,14 +502,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Europe',
+        question: 'أوروبا',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Privacy Policy',
+                text: 'سياسة الخصوصية',
                 href: 'https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view',
               },
             ],
@@ -517,14 +517,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Japan',
+        question: 'اليابان',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'プライバシーポリシー',
+                text: 'سياسة الخصوصية',
                 href: 'https://drive.google.com/file/d/11RTMmnHW4SqHNf7htr3xuSi-o2v2vWlp/view',
               },
             ],
@@ -532,15 +532,15 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Other Countries',
+        question: 'دول أخرى',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Privacy Policy',
-                href: 'https://drive.google.com/file/d/1fUIe6FBss6WrwsrssVr6OM_2uFFVhESD/view',
+                text: 'سياسة الخصوصية',
+                href: 'https://drive.google.com/file/d/1hnxvDJ5qHBnUi7cnkNdyD4PuWMz8Ntss/view',
               },
             ],
           },
@@ -611,7 +611,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'لا تقوم فيروفي بتتبع عملائها عبر الزمن وعلى مواقع الويب الخاصة بالأطراف الثالثة لتقديم إعلانات موجهة، وبالتالي لا تستجيب لإشارات متصفح الويب الخاصة بـ “عدم التتبع”. إذا وصلت إلى موقعنا الإلكتروني عبر رابط من موقع طرف ثالث يستجيب لطلبات “عدم التتبع”، فإن التعرف على أي طلب “عدم تتبع” قد بدأته سينتهي بمجرد وصولك إلى موقعنا الإلكتروني. لا يمكن للأطراف الثالثة جمع أي معلومات شخصية قابلة للتحديد من مواقع فيروفي الإلكترونية ما لم تقدمها لهم مباشرة. يتم وصف هذا أيضًا في سياسة الخصوصية الخاصة بنا.',
+                text: 'لا تقوم فيروفي بتتبع عملائها عبر الزمن وعلى مواقع الويب الخاصة بالأطراف الثالثة لتقديم إعلانات موجهة، وبالتالي لا تستجيب لإشارات متصفح الويب الخاصة بـ "عدم التتبع". إذا وصلت إلى موقعنا الإلكتروني عبر رابط من موقع طرف ثالث يستجيب لطلبات "عدم التتبع"، فإن التعرف على أي طلب "عدم تتبع" قد بدأته سينتهي بمجرد وصولك إلى موقعنا الإلكتروني. لا يمكن للأطراف الثالثة جمع أي معلومات شخصية قابلة للتحديد من مواقع فيروفي الإلكترونية ما لم تقدمها لهم مباشرة. يتم وصف هذا أيضًا في سياسة الخصوصية الخاصة بنا.',
               },
             ],
           },
