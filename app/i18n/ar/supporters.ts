@@ -25,7 +25,7 @@ import {
 import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
-  title: 'Supporters',
+  title: 'الداعمون',
   supportersList: [
     {
       img: H4RLogo,

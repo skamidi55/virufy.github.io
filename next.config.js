@@ -52,15 +52,6 @@ const nextConfig = {
         source: '/team',
         destination: '/advisors',
       },
-
-      {
-        source: '/:lang/join',
-        destination: '/:lang/join-us',
-      },
-      {
-        source: '/:lang/team',
-        destination: '/:lang/advisors',
-      },
     ];
   },
 
