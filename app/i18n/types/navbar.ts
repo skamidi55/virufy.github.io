@@ -23,7 +23,6 @@ export interface CoughCheckApp {
 
 export interface AboutUs {
   section: string;
-  ourStory: string;
   advisors: string;
   ourSupporters: string;
   blog: string;
