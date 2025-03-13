@@ -34,10 +34,10 @@ const JobList = ({
         {showModalConfirmation ? (
           <>
             <div className="fixed inset-0 top-60 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto h-[420px] w-[300px] md:h-[525px] md:w-[360px]">
+              <div className="relative mx-auto max-w-[90vw] max-h-[90vh] w-[300px] md:w-[360px] overflow-y-auto">
                 {/*content*/}
 
-                <div className="relative flex w-full flex-col rounded-xl border-0 bg-gradient-to-b from-[black] to-[#4167AD] font-medium text-white shadow-lg outline-none focus:outline-none">
+                <div className="relative flex w-full flex-col rounded-xl border-0 bg-gradient-to-b from-[black] to-[#4167AD] font-medium text-white shadow-lg outline-none focus:outline-none overflow-y-auto max-h-[90vh]">
                   {/*header*/}
 
                   <div className="flex justify-center px-4 pt-4 md:justify-between">
@@ -57,7 +57,7 @@ const JobList = ({
                   </div>
 
                   <div className="flex w-full rounded-t text-center md:text-left">
-                    <p className="mx-auto my-10 h-[100px] px-6 text-xl">
+                    <p className="mx-auto my-10 max-h-[200px] px-6 text-lg md:text-xl break-words overflow-y-auto">
                       {modal?.text}
                     </p>
                   </div>
