@@ -43,7 +43,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
       {
         label: 'About Us',
         route: [
-          `/${lang}/story`,
           `/${lang}/advisors`,
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
@@ -265,12 +264,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     >
                       <Link
                         className="pb-3 pt-6 text-white hover:font-bold"
-                        href={`/${lang}/story`}
-                      >
-                        {aboutUs?.ourStory}
-                      </Link>
-                      <Link
-                        className="py-3 text-white hover:font-bold"
                         href={`/${lang}/advisors`}
                       >
                         {aboutUs?.advisors}
