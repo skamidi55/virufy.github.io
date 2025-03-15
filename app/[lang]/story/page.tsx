@@ -64,7 +64,11 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                         <Fragment key={i}>{text.text}</Fragment>
                       ) : (
                         <Link
-                          className="text-blue-500"
+                          className={
+                            text.className || 
+                            (!text.style?.color ? "text-blue-500" : "")
+                          }
+                          style={text.style || {}}
                           key={i}
                           href={`/${lang}${text.url}`}
                         >
