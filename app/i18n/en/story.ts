@@ -28,6 +28,7 @@ const story: Story = {
           type: 'link',
           url: '/amils-story',
           text: 'Virufy founder Amil Khanzada',
+          className: 'text-[#30DA74]',
         },
         {
           type: 'text',

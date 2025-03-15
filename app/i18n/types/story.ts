@@ -23,6 +23,8 @@ interface StorySectionText {
   type: string;
   text: string;
   url?: string;
+  style?: Record<string, string>;
+  className?: string;
 }
 
 interface ValuesSection {
