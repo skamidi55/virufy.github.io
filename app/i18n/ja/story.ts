@@ -17,7 +17,7 @@ const story: Story = {
     ],
   },
   storySection: {
-    title: 'ストーリー',
+    title: 'どのように始まったか',
     texts: [
       [
         {
