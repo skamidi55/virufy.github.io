@@ -1,3 +1,5 @@
+'use client';
+import { ChangeEvent, FormEvent, useState } from 'react';
 import { ButtonType } from '../themes';
 
 export default function ModalSupporter({
@@ -19,6 +21,64 @@ export default function ModalSupporter({
   submitButtonText: string;
   content: string;
 }) {
+  // Define types for the form data
+  interface FormData {
+    name: string;
+    email: string;
+    message: string;
+  }
+  // Initialize state with FormData type
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    message: '',
+  });
+  // Handle change for form inputs
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  // Handle form submission
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formActionURL =
+      'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPCkOF2egmshFjXPN01wwlfWDuKLYpUX6qKi1owg35SjrnaA/formResponse'; // Replace with your form's action URL
+    // Google Form field names (entry IDs) from the form inspection
+    const formFields = {
+      'entry.285593858': formData.name,
+      'entry.1660753976': formData.email,
+      'entry.1273877453': formData.message,
+    };
+    const formBody = new URLSearchParams(formFields).toString();
+    fetch(formActionURL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: formBody,
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert('Form submitted successfully!');
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+          });
+        } else {
+          alert('There was an error submitting the form');
+        }
+      })
+      .catch((error) => {
+        console.error('Error submitting form:', error);
+        alert('There was an error submitting the form');
+      });
+  };
   return (
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
@@ -57,34 +117,42 @@ export default function ModalSupporter({
                 action={'Placehold for google form'}
                 target="_blank"
                 autoComplete="off"
+                onSubmit={handleSubmit}
               >
                 <p>{nametitle}</p>
                 <input
-                  name="entry.285593858"
+                  name="Name"
                   type="text"
+                  value={formData.name}
                   className="focus: border-blue mt-2 w-full p-2 text-black shadow-lg"
                   required
                   placeholder={nametitle}
+                  onChange={handleChange}
                 ></input>
                 <p className="pt-2">{emailtitle}</p>
                 <input
-                  name="entry.1660753976"
+                  name="Email"
                   type="email"
+                  value={formData.email}
                   className="focus: border-blue mt-2 w-full p-2 text-black shadow-lg"
                   required
                   placeholder={emailtitle}
+                  onChange={handleChange}
                 ></input>
                 <p className="pt-2">{texttitle}</p>
                 <textarea
-                  name="entry.1273877453"
+                  name="Message"
+                  value={formData.message}
                   className="focus: border-blue mt-2 w-full p-2 text-black shadow-lg"
                   required
                   placeholder={textplaceholder}
+                  onChange={handleChange}
                 ></textarea>
               </form>
               <button
                 className={`${ButtonType.primary} 'pt-10 pb-2px h-[50px] w-[150px] rounded-full align-middle text-base font-semibold`}
                 onClick={() => close()}
+                type="submit"
               >
                 {' '}
                 {submitButtonText}

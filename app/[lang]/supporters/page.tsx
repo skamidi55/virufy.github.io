@@ -10,49 +10,6 @@ import { ButtonType } from '../themes';
 import ModalSupporter from '../components/ModalSupporter';
 import { useState } from 'react';
 
-const GoogleFormSubmitter = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-  });
-};
-const handleChange = (e) => {
-  const { name, value } = e.target;
-  setFormData({
-    ...formData,
-    [name]: value,
-  });
-};
-
-// Submit the form
-const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  // Construct the form data to match the Google Form entry names
-  const formPayload = new FormData();
-  formPayload.append('entry.123456', formData.name); // Replace with actual field entry name
-  formPayload.append('entry.654321', formData.email); // Replace with actual field entry name
-
-  try {
-    const response = await fetch(
-      'https://docs.google.com/forms/d/e/1FAIpQLSfPCkOF2egmshFjXPN01wwlfWDuKLYpUX6qKi1owg35SjrnaA/formResponse',
-      {
-        method: 'POST',
-        body: formPayload,
-      }
-    );
-
-    if (response.ok) {
-      alert('Form submitted successfully!');
-    } else {
-      alert('Form submission failed.');
-    }
-  } catch (error) {
-    console.error('Error submitting form:', error);
-    alert('Error submitting form.');
-  }
-};
-
 const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     supporters: { title, buttontext, supportersList, contactusform },
