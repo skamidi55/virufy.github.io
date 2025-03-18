@@ -17,7 +17,7 @@ const story: Story = {
     ],
   },
   storySection: {
-    title: 'القصة',
+    title: 'كيف بدأت الفكرة ',
     texts: [
       [
         {

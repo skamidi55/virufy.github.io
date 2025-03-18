@@ -18,7 +18,7 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const [showModal, setShowModal] = useState(false);
   const closeModal = () => setShowModal(false);
   return (
-    <div className="bg-[#4064AD]">
+    <div className="bg-white">
       {/* Globe background img */}
       <div className="relative -top-24 flex justify-center">
         <ExportedImage
@@ -64,9 +64,16 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         ) : null}
       </div>
 
-      <div className="relative -top-24 z-10 flex flex-col items-center justify-center bg-gradient-to-b from-[#111B2E] to-[#4064AD]">
+      <div className="relative -top-24 z-10 flex flex-col items-center justify-center bg-white">
         <div className="flex max-w-[1440px] flex-col items-center justify-center">
-          <div className="mt-[80px] w-[100vw] max-w-[1440px] md:hidden">
+          {/* Our Supporters heading */}
+          <div className="mb-10 mt-10 w-full text-center">
+            <h2 className="text-1xl relative inline-block font-semibold text-blue-700 md:text-4xl">
+              Our Supporters
+              <div className="absolute bottom-[-8px] left-[-10%] h-[2px] w-[120%] bg-green-500 md:bottom-[-12px] md:h-[3px]"></div>
+            </h2>
+          </div>
+          <div className="mt-0 w-[100vw] max-w-[1440px] md:hidden">
             {/* Supporters mobile view */}
             <div className="flex w-full flex-wrap justify-center">
               {supportersList.map(({ img, alt, link }) => (
@@ -89,7 +96,7 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
           {/* Desktop view */}
           <div className="hidden w-full max-w-[1440px] md:block">
-            <div className="mb-40"></div>
+            <div className="mb-10"></div>
 
             {/* Supporters */}
             <div className="flex w-full flex-wrap justify-center px-12">
