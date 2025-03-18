@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { ButtonType } from '../themes';
 
 // import { ChangeEvent, FormEvent, useState } from 'react';
-// import { ButtonType } from '../themes';
 
 export default function ModalSupporter({
   close,
@@ -100,13 +99,7 @@ export default function ModalSupporter({
             <div className="flex w-full rounded-t">
               {/* Close button */}
               <div className="absolute flex w-full flex-col items-end pr-5 pt-3">
-                <button
-                  className="flex justify-center rounded-full text-xl font-medium text-white shadow-xl outline-none transition-all duration-150 ease-linear"
-                  type="button"
-                  onClick={close}
-                >
-                  X
-                </button>
+                <button onClick={close}>&times; {/* Close icon (×) */}</button>
               </div>
             </div>
             {/*body*/}
@@ -116,7 +109,7 @@ export default function ModalSupporter({
                   {title}
                 </span>
               </p>
-              <span className="color-black text-center text-lg text-gray-200">
+              <span className="color-black p-10 text-center text-lg text-gray-200">
                 {content}
               </span>
               {/* <form
@@ -164,7 +157,10 @@ export default function ModalSupporter({
                   {submitButtonText}
                 </button>
               </form> */}
-              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfPCkOF2egmshFjXPN01wwlfWDuKLYpUX6qKi1owg35SjrnaA/viewform">
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfPCkOF2egmshFjXPN01wwlfWDuKLYpUX6qKi1owg35SjrnaA/viewform"
+                className=""
+              >
                 <button
                   className={`${ButtonType.primary} 'pt-30 pb-2px h-[50px] w-[150px] rounded-full align-middle text-base font-semibold`}
                 >
