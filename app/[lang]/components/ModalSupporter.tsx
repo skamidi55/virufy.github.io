@@ -1,15 +1,19 @@
 'use client';
-import { ChangeEvent, FormEvent, useState } from 'react';
+
+import Link from 'next/link';
 import { ButtonType } from '../themes';
+
+// import { ChangeEvent, FormEvent, useState } from 'react';
+// import { ButtonType } from '../themes';
 
 export default function ModalSupporter({
   close,
   title,
-  nametitle,
-  emailtitle,
-  texttitle,
-  textplaceholder,
-  submitButtonText,
+  // nametitle,
+  // emailtitle,
+  // texttitle,
+  // textplaceholder,
+  // submitButtonText,
   content,
 }: {
   close: () => void;
@@ -22,63 +26,66 @@ export default function ModalSupporter({
   content: string;
 }) {
   // Define types for the form data
-  interface FormData {
-    name: string;
-    email: string;
-    message: string;
-  }
+  // interface FormData {
+  //   name: string;
+  //   email: string;
+  //   message: string;
+  // }
   // Initialize state with FormData type
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    message: '',
-  });
+  // const [formData, setFormData] = useState<FormData>({
+  //   name: '',
+  //   email: '',
+  //   message: '',
+  // });
   // Handle change for form inputs
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  // const handleChange = (
+  //   e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  // ) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
   // Handle form submission
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formActionURL =
-      'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPCkOF2egmshFjXPN01wwlfWDuKLYpUX6qKi1owg35SjrnaA/formResponse'; // Replace with your form's action URL
-    // Google Form field names (entry IDs) from the form inspection
-    const formFields = {
-      'entry.285593858': formData.name,
-      'entry.1660753976': formData.email,
-      'entry.1273877453': formData.message,
-    };
-    const formBody = new URLSearchParams(formFields).toString();
-    fetch(formActionURL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: formBody,
-    })
-      .then((response) => {
-        if (response.ok) {
-          alert('Form submitted successfully!');
-          setFormData({
-            name: '',
-            email: '',
-            message: '',
-          });
-        } else {
-          alert('There was an error submitting the form');
-        }
-      })
-      .catch((error) => {
-        console.error('Error submitting form:', error);
-        alert('There was an error submitting the form');
-      });
-  };
+  // const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   const formActionURL =
+  //     'https://docs.google.com/forms/d/e/1FAIpQLSfPCkOF2egmshFjXPN01wwlfWDuKLYpUX6qKi1owg35SjrnaA/formResponse';
+  //   // Google Form field names (entry IDs) from the form inspection
+  //   const formFields = {
+  //     'entry.285593858': formData.name,
+  //     'entry.1660753976': formData.email,
+  //     'entry.1273877453': formData.message,
+  //   };
+  //   const formBody = new URLSearchParams(formFields).toString();
+  //   //console.log(formBody);
+  //   fetch(formActionURL, {
+  //     method: 'POST',
+  //     headers: {
+  //       'Access-Control-Allow-Origin': 'localhost:3000', //may need proxy
+  //       'Content-Type': 'application/x-www-form-urlencoded',
+  //     },
+  //     body: formBody,
+  //   })
+  //     .then((response) => {
+  //       //console.log(response);
+  //       if (response.ok) {
+  //         alert('Form submitted successfully!');
+  //         setFormData({
+  //           name: '',
+  //           email: '',
+  //           message: '',
+  //         });
+  //       } else {
+  //         alert('There was an error submitting the form');
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error submitting form:', error);
+  //       alert('There was an error submitting the form');
+  //     });
+  // };
   return (
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
@@ -112,7 +119,7 @@ export default function ModalSupporter({
               <span className="color-black text-center text-lg text-gray-200">
                 {content}
               </span>
-              <form
+              {/* <form
                 className="m-8 w-full md:px-6"
                 action={'Placehold for google form'}
                 target="_blank"
@@ -121,7 +128,7 @@ export default function ModalSupporter({
               >
                 <p>{nametitle}</p>
                 <input
-                  name="Name"
+                  name="name"
                   type="text"
                   value={formData.name}
                   className="focus: border-blue mt-2 w-full p-2 text-black shadow-lg"
@@ -131,7 +138,7 @@ export default function ModalSupporter({
                 ></input>
                 <p className="pt-2">{emailtitle}</p>
                 <input
-                  name="Email"
+                  name="email"
                   type="email"
                   value={formData.email}
                   className="focus: border-blue mt-2 w-full p-2 text-black shadow-lg"
@@ -141,27 +148,35 @@ export default function ModalSupporter({
                 ></input>
                 <p className="pt-2">{texttitle}</p>
                 <textarea
-                  name="Message"
+                  name="message"
                   value={formData.message}
                   className="focus: border-blue mt-2 w-full p-2 text-black shadow-lg"
                   required
                   placeholder={textplaceholder}
                   onChange={handleChange}
                 ></textarea>
-              </form>
-              <button
-                className={`${ButtonType.primary} 'pt-10 pb-2px h-[50px] w-[150px] rounded-full align-middle text-base font-semibold`}
-                onClick={() => close()}
-                type="submit"
-              >
-                {' '}
-                {submitButtonText}
-              </button>
+                <button
+                  className={`${ButtonType.primary} 'pt-10 pb-2px h-[50px] w-[150px] rounded-full align-middle text-base font-semibold`}
+                  //onClick={() => close()}
+                  type="submit"
+                >
+                  {' '}
+                  {submitButtonText}
+                </button>
+              </form> */}
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfPCkOF2egmshFjXPN01wwlfWDuKLYpUX6qKi1owg35SjrnaA/viewform">
+                <button
+                  className={`${ButtonType.primary} 'pt-30 pb-2px h-[50px] w-[150px] rounded-full align-middle text-base font-semibold`}
+                >
+                  Google Form
+                </button>
+              </Link>
             </div>
             {/*footer*/}
           </div>
         </div>
       </div>
+
       <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
     </>
   );
