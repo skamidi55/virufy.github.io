@@ -58,6 +58,7 @@ export default function ModalSupporter({
     //console.log(formBody);
     fetch(formActionURL, {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
@@ -74,6 +75,7 @@ export default function ModalSupporter({
           });
         } else {
           //alert('There was an error submitting the form');
+          close();
         }
       })
       .catch((error) => {
