@@ -109,11 +109,11 @@ export default function ModalSupporter({
             {/*body*/}
             <div className="relative flex flex-col items-center rounded-b-2xl bg-gradient-to-b from-[#273F6A] to-[#4167AD] p-6">
               <p className="mb-6 mt-2 leading-relaxed">
-                <span className="color-black text-center text-4xl font-bold text-gray-200">
+                <span className="text-center text-4xl font-bold text-gray-200">
                   {title}
                 </span>
               </p>
-              <span className="color-black text-center text-lg text-gray-200">
+              <span className="text-center text-lg text-gray-200">
                 {content}
               </span>
               <form
@@ -123,7 +123,7 @@ export default function ModalSupporter({
                 autoComplete="off"
                 onSubmit={handleSubmit}
               >
-                <p>{nametitle}</p>
+                <p className="text-white">{nametitle}</p>
                 <input
                   name="name"
                   type="text"
@@ -133,7 +133,7 @@ export default function ModalSupporter({
                   placeholder={nametitle}
                   onChange={handleChange}
                 ></input>
-                <p className="pt-2">{emailtitle}</p>
+                <p className="pt-2 text-white">{emailtitle}</p>
                 <input
                   name="email"
                   type="email"
@@ -143,7 +143,7 @@ export default function ModalSupporter({
                   placeholder={emailtitle}
                   onChange={handleChange}
                 ></input>
-                <p className="pt-2">{texttitle}</p>
+                <p className="pt-2 text-white">{texttitle}</p>
                 <textarea
                   name="message"
                   value={formData.message}
