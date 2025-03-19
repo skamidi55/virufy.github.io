@@ -25,7 +25,18 @@ import {
 import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
-  title: 'Supporters',
+  title: 'Our Supporters',
+  buttontext: 'Support Us',
+  contactusform: {
+    title: 'Become a Partner',
+    content:
+      'Your help is important to us, please fill in your data and we will contact you as soon as possible.',
+    nametitle: 'Name',
+    emailtitle: 'Email',
+    texttitle: 'Message',
+    textplaceholder: 'Enter Message',
+    submitButtonText: 'Submit',
+  },
   supportersList: [
     {
       img: H4RLogo,

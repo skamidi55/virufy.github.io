@@ -1,3 +1,4 @@
+'use client';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { BgHeader } from '@/public/images/supporters';
@@ -5,12 +6,17 @@ import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
+import { ButtonType } from '../themes';
+import ModalSupporter from '../components/ModalSupporter';
+import { useState } from 'react';
 
 const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    supporters: { title, supportersList },
+    supporters: { title, buttontext, supportersList, contactusform },
   } = usei18n(lang);
 
+  const [showModal, setShowModal] = useState(false);
+  const closeModal = () => setShowModal(false);
   return (
     <div className="bg-white">
       {/* Globe background img */}
@@ -35,6 +41,27 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           pt-10
           text-xl"
         />
+        <button
+          className={`${ButtonType.primary} 'pt-10 translate-x-[-50%]'} pb-2px absolute top-[80%] h-[65px] w-[250px] translate-y-[-50%] rounded-full align-middle text-lg font-semibold`}
+          onClick={() => setShowModal(true)}
+        >
+          {' '}
+          {buttontext}
+        </button>
+        {showModal ? (
+          <div onClick={closeModal}>
+            <ModalSupporter
+              close={closeModal}
+              title={contactusform.title}
+              nametitle={contactusform.nametitle}
+              emailtitle={contactusform.emailtitle}
+              texttitle={contactusform.texttitle}
+              textplaceholder={contactusform.textplaceholder}
+              submitButtonText={contactusform.submitButtonText}
+              content={contactusform.content}
+            />
+          </div>
+        ) : null}
       </div>
 
       <div className="relative -top-24 z-10 flex flex-col items-center justify-center bg-white">

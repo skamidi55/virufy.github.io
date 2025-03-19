@@ -26,6 +26,17 @@ import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
   title: 'الداعمون',
+  buttontext: 'ادعمنا',
+  contactusform: {
+    title: 'كن شريكاً',
+    content:
+      'مساعدتك مهمة بالنسبة لنا، يرجى ملء بياناتك وسنتواصل معك في أقرب وقت ممكن.',
+    nametitle: 'الاسم',
+    emailtitle: 'البريد الإلكتروني',
+    texttitle: 'الرسالة',
+    textplaceholder: 'أدخل رسالة',
+    submitButtonText: 'تأكيد',
+  },
   supportersList: [
     {
       img: H4RLogo,

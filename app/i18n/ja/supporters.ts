@@ -26,6 +26,17 @@ import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
   title: 'サポーター',
+  buttontext: 'お問い合わせ',
+  contactusform: {
+    title: 'パートナーになる（企業）',
+    content:
+      'ぜひご協力をお願いします。データのご提供後、順次ご連絡差しあげます。',
+    nametitle: 'お名前',
+    emailtitle: 'メールアドレス',
+    texttitle: 'メッセージ',
+    textplaceholder: 'メッセージを入力する',
+    submitButtonText: '送信する',
+  },
   supportersList: [
     {
       img: H4RLogo,
