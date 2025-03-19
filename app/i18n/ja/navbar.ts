@@ -24,7 +24,7 @@ export const navbar: NavbarType = {
     pressReleases: 'プレスリリース',
     ourResearch: '出版物',
   },
-  faq: 'FAQ',
+  faq: 'よくある質問',
   donate: {
     buttonText: '寄付',
     optionsTitle: '寄付方法',
