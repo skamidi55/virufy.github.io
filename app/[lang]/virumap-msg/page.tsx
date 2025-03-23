@@ -1,13 +1,13 @@
-import { type Locale } from '@/i18n-config';
-import RedirectWithSpinner from '../components/RedirectWithSpinner';
+'use client';
+import { useEffect } from 'react';
 
-const VirumapMsgPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
-  const targetUrl =
-    lang === 'ja'
-      ? 'https://tiny.cc/virumap-msg-jp'
-      : 'https://tiny.cc/virumap-msg';
+const paperURL =
+  'https://docs.google.com/document/d/1e6p9TAd5NC4W7Lp58oxIp3FhUDGMexXXPL-f4--hhKk/edit?usp=sharing';
 
-  return <RedirectWithSpinner targetUrl={targetUrl} />;
-};
+export default function VirumapMsgRedirect() {
+  useEffect(() => {
+    window.location.replace(paperURL);
+  }, []);
 
-export default VirumapMsgPage;
+  return <p>Redirecting to English message document...</p>;
+}
