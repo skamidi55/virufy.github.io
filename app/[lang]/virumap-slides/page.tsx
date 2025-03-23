@@ -1,17 +1,13 @@
-import { type Locale } from '@/i18n-config';
-import RedirectWithSpinner from '../components/RedirectWithSpinner';
+'use client';
+import { useEffect } from 'react';
 
-const VirumapSlidesPage = ({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) => {
-  const targetUrl =
-    lang === 'ja'
-      ? 'https://tiny.cc/virumap-slide-jp'
-      : 'https://tiny.cc/virumap-slides';
+const paperURL =
+  'https://docs.google.com/presentation/d/1Sb3WXxKrJPbdKkKH9IXV4iWCd3b5iSz5f_92UuJbYZc/edit?usp=sharing';
 
-  return <RedirectWithSpinner targetUrl={targetUrl} />;
-};
+export default function VirumapSlidesRedirect() {
+  useEffect(() => {
+    window.location.replace(paperURL);
+  }, []);
 
-export default VirumapSlidesPage;
+  return <p>Redirecting to English slide deck...</p>;
+}
